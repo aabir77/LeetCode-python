@@ -2,8 +2,6 @@ class Solution:
   def getRow(self, rowIndex: int) -> list[int]:
     if rowIndex == 0:
       return [1]  # 0th row is always one
-    if rowIndex == 2:
-      return [1,1]
     
     row = [1]  # because even the 0th row has a value — it's [1].
 
@@ -16,4 +14,4 @@ class Solution:
 
     return row
 sol = Solution()
-print(sol.getRow(3))  # Output: [1, 3, 3, 1]
+print(sol.getRow(2))  # Output: [1, 3, 3, 1]
